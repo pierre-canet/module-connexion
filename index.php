@@ -9,7 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="inscription.php">Inscription/Connexion</a></li>
+            <li><a href="profil.php">Profil</a></li>
+            <li class="adminBar"><a href="admin.php">Admin</a></li>
+        </ul>
+    </nav>
+    <h1>Accueil</h1>
+    <article>
+        <p>Bienvenue sur notre, site, où vous pourrez créer et gérer votre profil !</p>
+    </article>
     <?php
         /*Vous décidez de créer un module de connexion permettant aux utilisateurs de créer leur
         compte, de se connecter et de modifier leurs informations.
