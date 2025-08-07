@@ -1,9 +1,15 @@
 <?php
+    $mysqli = new mysqli("localhost", "root", "", "moduleconnexion");
 
+    if($mysqli->connect_error){
+        die("Erreur de connexion: ".$mysqli->connect_error);
+    };
+
+    $query ="SELECT * FROM utilisateurs";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +27,11 @@
     </nav>
     <h1>Accueil</h1>
     <article>
-        <p>Bienvenue sur notre, site, où vous pourrez créer et gérer votre profil !</p>
+        <h3>Bienvenue sur notre site !</h3>
+        <p>
+            Sur ce site, vous allez pouvoir vous créer un compte, gérer votre profil,
+            ainsi que vous connecter à votre compte une fois ce dernier créé.
+        </p>        
     </article>
     <?php
         /*Vous décidez de créer un module de connexion permettant aux utilisateurs de créer leur
